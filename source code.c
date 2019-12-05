@@ -14,19 +14,19 @@ int main()
 	{
 		if (GetAsyncKeyState(VK_R))
 		{
-			printf("ÇëÊäÈëµã»÷¼ä¸ôÊ±¼ä£¬µ¥Î»ÎªºÁÃë£¬Í¬Ê±É¾³ı¶àÓàµÄ×ÖÄ¸\n");
+			printf("è¯·è¾“å…¥ç‚¹å‡»é—´éš”æ—¶é—´ï¼Œå•ä½ä¸ºæ¯«ç§’ï¼ŒåŒæ—¶åˆ é™¤å¤šä½™çš„å­—æ¯\n");
 			scanf("%d", &pause_time);
 		}
 		if (GetAsyncKeyState(VK_W))
 		{
-			printf("Á¬µãÒÑ¿ªÊ¼£¬µ±Ç°Á¬µã¼ä¸ô£º%d\n", pause_time);
+			printf("è¿ç‚¹å·²å¼€å§‹ï¼Œå½“å‰è¿ç‚¹é—´éš”ï¼š%dms\n", pause_time);
 			while (1)
 			{
 				mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
 				Sleep(pause_time);
 				if (GetAsyncKeyState(VK_E))
 				{
-					printf("Á¬µãÒÑ½áÊø\n");
+					printf("è¿ç‚¹å·²ç»“æŸ\n");
 					break;
 				}
 			}
@@ -43,5 +43,5 @@ int main()
 }
 void reminder()
 {
-	printf("µÍÅä°æÁ¬µãÆ÷\nÄ¬ÈÏµã»÷¼ä¸ôÎª50ms\nW:¿ªÊ¼\nE:Í£Ö¹\nR:ÉèÖÃµã»÷¼ä¸ô\nQ:ÍË³ö\nT:ÇåÆÁ\n");
+	printf("ä½é…ç‰ˆè¿ç‚¹å™¨\nW:å¼€å§‹\nE:åœæ­¢\nR:è®¾ç½®ç‚¹å‡»é—´éš”\nQ:é€€å‡º\nT:æ¸…å±\n");
 }
